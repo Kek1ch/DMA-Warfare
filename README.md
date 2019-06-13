@@ -1,4 +1,4 @@
 # Kek1ch
-VK - vk.com/mamonov1337
+VK - https://vk.com/mamonov1337
 
-Коллекция аддонов - steamcommunity.com/sharedfiles/filedetails/?id=1513109120
+Коллекция аддонов - https://steamcommunity.com/sharedfiles/filedetails/?id=1513109120
