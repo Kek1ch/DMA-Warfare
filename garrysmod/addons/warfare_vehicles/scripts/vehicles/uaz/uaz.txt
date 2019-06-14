@@ -1,0 +1,250 @@
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.9"
+		"MassCenterOverride"	"0 -4 2"
+		"MassOverride"			"1050"
+		"AddGravity"			"0.05"
+		"MaxAngularVelocity"	"720"
+	}
+	"Engine"
+	{
+		"HorsePower"			"250"
+		"MaxRPM"				"3000"
+		"MaxSpeed"				"180"
+		"MaxReverseSpeed"		"20"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"3"
+		"Autotransmission"		"1"
+		"AxleRatio"				"6.5"
+		"Gear"					"1"
+
+		"ShiftUpRPM"			"2800"
+		"ShiftDownRPM"			"900"
+	}
+	"Steering"
+	{
+		"degreesSlow"		"45"	// steering cone at zero to slow speed
+		"degreesFast"		"12"	// steering cone at fast speed to max speed
+		"degreesBoost"		"9"	// steering cone at max boost speed (blend toward this after max speed)
+		"steeringExponent"	"1.1"	// steering function is linear, then raised to this power to be slower at the beginning of the curve, faster at the end
+		"slowcarspeed"		"15"
+		"fastcarspeed"		"40"
+		"slowSteeringRate"	"2.2"		
+		"fastSteeringRate"	"0.8"
+		"steeringRestRateSlow"	"2"
+		"steeringRestRateFast"	"0.8
+		"turnThrottleReduceSlow" "0.5"
+		"turnThrottleReduceFast" "3.0"
+		"brakeSteeringRateFactor"	"2"
+		"throttleSteeringRestRateFactor"	"1"
+		"boostSteeringRestRateFactor"	"1.1"
+		"boostSteeringRateFactor"	"1.1"
+
+		"powerSlideAccel"	"200"
+
+		"skidallowed"		"1"
+		"dustcloud"		"1"
+
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"18"
+			"Mass"							"115"
+			"Inertia"						"1"
+			"Damping"						"0"
+			"RotDamping"					"0.2"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"40" //Длинна пружины (для регулеровки выосоты подвески)
+			"SpringDamping"					"3"  //Мягкость проминания пружины
+			"StabilizerConstant"			"5"
+			"SpringDampingCompression"		"2" //Мягкость наезда на неровность
+			"MaxBodyForce"					"18"
+		}
+		"TorqueFactor"						"0.3"
+		"BrakeFactor"						"0.5"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"18"
+			"Mass"							"155"
+			"Inertia"						"1"
+			"Damping"						"0"
+			"RotDamping"					"0.2"
+			"Material"						"phx_rubbertire2"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"45" //Длинна пружины (для регулеровки выосоты подвески)
+			"SpringDamping"					"3"  //Мягкость проминания пружины
+			"StabilizerConstant"			"5"
+			"SpringDampingCompression"		"2" //Мягкость наезда на неровность
+			"MaxBodyForce"					"16"
+		}
+		"TorqueFactor"						"0.7"
+		"BrakeFactor"						"0.5"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.02"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.15"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.22"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.34"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\_TailS_\uaz\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\_TailS_\uaz\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\_TailS_\uaz\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\_TailS_\uaz\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\_TailS_\uaz\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\_TailS_\uaz\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\_TailS_\uaz\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\_TailS_\uaz\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\_TailS_\uaz\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\_TailS_\uaz\enginestart.mp3"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\_TailS_\uaz\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\_TailS_\uaz\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\_TailS_\uaz\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\_TailS_\uaz\idle.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\_TailS_\uaz\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\_TailS_\uaz\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}
