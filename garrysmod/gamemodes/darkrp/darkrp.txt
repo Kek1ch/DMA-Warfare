@@ -1,0 +1,7 @@
+"darkrp"
+{
+"base" "nutscript"
+"pisundesc" "DarkRP"
+"vice" "Chessnut"
+"menusystem" "1"
+} 
