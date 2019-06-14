@@ -1,0 +1,6 @@
+"nutscript"
+{
+	"base"		"sandbox"
+	"title"		"NutScript 1.1"
+	"author"	"TDP"
+}
