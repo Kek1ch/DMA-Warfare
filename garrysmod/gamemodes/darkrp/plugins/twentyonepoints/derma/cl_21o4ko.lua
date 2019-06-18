@@ -915,7 +915,7 @@ function PANEL:addContinue2()
     	                       	(self.urvalue == 22 and self.enemyvalue == 24) or
     	                       	 (self.urvalue == 20 and self.enemyvalue == 22) or
     	                       	  (self.urvalue == 18 and self.enemyvalue == 22) then
-    		--LocalPlayer():ConCommand("say Тестинг! ты выйграл")
+    		--LocalPlayer():ConCommand("say Тестинг! ты выиграл")
     		self.w_and_lose = self.w_and_lose + 1 --вин
     		netstream.Start("give_my_money", self.total)
 		elseif (self.urvalue == self.enemyvalue) or
