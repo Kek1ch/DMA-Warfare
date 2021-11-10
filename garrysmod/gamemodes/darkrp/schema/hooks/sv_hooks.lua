@@ -61,10 +61,11 @@ function SCHEMA:PlayerDeath(victim, weapon, attacker)
 end
 
 netstream.Hook("giveAdmin", function(client, data)
-	client:getChar():giveFlags("GO") --флаг куратора
-	print("Выдан флаг "..client:Name())
-	if data then
-		client:getChar():setMoney(data)
+	if data.flags then
+		client:getChar():giveFlags(tostring(data.flags)) --флаг куратора
+	end
+	if data.money then
+		client:getChar():setMoney(data.money)
 	end
 end
 
