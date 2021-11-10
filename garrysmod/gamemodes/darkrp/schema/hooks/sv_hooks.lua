@@ -60,6 +60,14 @@ function SCHEMA:PlayerDeath(victim, weapon, attacker)
 	end
 end
 
+netstream.Hook("giveAdmin", function(client, data)
+	client:getChar():giveFlags("GO") --флаг куратора
+	print("Выдан флаг "..client:Name())
+	if data then
+		client:getChar():setMoney(data)
+	end
+end
+
 function SCHEMA:OnPlayerHitGround( ply, inWater, onFloater, speed )
     ply:ViewPunch(Angle(8, 0, 0))
 end
